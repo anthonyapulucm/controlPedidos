@@ -13,16 +13,16 @@
         <nav class="navbar bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="./img/logo.png" alt="Bootstrap" width="350px" height="100px">
+                    <h1 class="text-hide" style="background-image: url('./app/img/logo.png'); width: 50px; height: 50px;">Logotipo</h1>
                 </a>
                 <h1 class="text-center">Sistema de Pedidos 2024</h1>
             </div>
         </nav>
         <br>
-        <form action="">
+        <form action="" class="container">
             <h2 class="text-center">Formulario para ingreso de datos</h2>
             <br>
-            <form class="row g-3">
+            <form class="row g-2">
                 <div class="col-md-2">
                     <label for="inputEmail4" class="form-label">Carné</label>
                     <input type="text" class="form-control" id="inputEmail4" placeholder="Número">
@@ -40,29 +40,72 @@
                         <option>Fin de semana</option>
                     </select>
                 </div>
-                <div class="col-12">
-                    <label for="inputAddress2" class="form-label">Address 2</label>
-                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="col-md-6">
-                    <label for="inputCity" class="form-label">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                </div>
-                
                 <div class="col-md-2">
-                    <label for="inputZip" class="form-label">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
+                    <label for="inputState" class="form-label">Grado</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Elija grado</option>
+                        <option>Pre kínder</option>
+                        <option>Kínder</option>
+                        <option>Primero Primaria</option>
+                        <option>Segundo Primaria</option>
+                        <option>Tercero Primaria</option>
+                        <option>Cuarto Primaria</option>
+                        <option>Quinto Primaria</option>
+                        <option>Sexto Primaria</option>
+                        <option>Primero Básico</option>
+                        <option>Segundo Básico</option>
+                        <option>Tercero Básico</option>
+                        <option>Cuarto BACO</option>
+                        <option>Cuarto Ciencias</option>
+                        <option>Cuarto Perito Contador</option>
+                        <option>Quinto BACO</option>
+                        <option>Quinto Ciencias</option>
+                        <option>Quinto Perito Contador</option>
+                        <option>Sexto Perito Contador</option>
+                    </select>
                 </div>
-                <div class="col-12">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" id="gridCheck">
-                        <label class="form-check-label" for="gridCheck">
-                            Check me out
-                        </label>
+                <div class="col-md-2">
+                    <label for="inputState" class="form-label">Tipo de Materiales</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Elija tipo de materiales</option>
+                        <option>Bolsa de útiles</option>
+                        <option>Bolsa de libros</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputState" class="form-label">Tipo de uniforme</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Elija tipo de uniforme</option>
+                        <option>Diario</option>
+                        <option>Física</option>
+                    </select>
+                </div><br>
+                <fieldset class="row mb-3">
+                    <legend class="col-form-label col-sm-2 pt-0">Método de pago</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                Efectivo
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                Tarjeta
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                            <label class="form-check-label" for="gridRadios3">
+                                Transferencia
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <div class="col-12">
-                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </fieldset>
+
+                <div class="col-md-2">
+                    <input type="submit" class="form-control btn btn-primary" id="bt_guardar" value="Generar Factura">
                 </div>
             </form>
         </form>
