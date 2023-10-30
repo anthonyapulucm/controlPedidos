@@ -13,7 +13,7 @@
         <nav class="navbar bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="app/img/logo.png" alt="Logotipo Suizo" class="img-thumbnail">
+                    <img src="app/img/logo.png" alt="Logo Suizo" class="img-thumbnail">
                 </a>
                 <h1 class="text-center">Sistema de Pedidos 2024</h1>
             </div>
@@ -91,12 +91,16 @@
                             <th>Utiles</th>
                             <th>Uniformes</th>
                             <th>Sub Total</th>
+                            <th>Procesos</th>
                         </tr>
                     </thead>
                     <tbody>
 
                         <tr>
-                            <td></td>
+                            <td>Paquete de libros</td>
+                            <td>Uniforme diario</td>
+                            <td>0</td>
+                            <td>Acualizar/Eliminar</td>
                         </tr>
                     </tbody>
                 </table>
