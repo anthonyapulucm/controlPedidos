@@ -5,7 +5,7 @@ if (empty($_POST["btnIniciar"])){
     } else {
         $usuario = $_POST["usuario"];
         $password = $_POST["password"];
-        $sql = $conexion -> query("SELECT * FROM USUARIO WHERE usuario = '$usuario' and PASSWORD = '$password'");
+        $sql = $conexion -> query("SELECT * FROM USUARIOS WHERE nombre_usuario = '$usuario' and PASSWORD = '$password'");
         if ($datos = $sql->fetch_object()) {
             header("location: index.php");
         } else {
