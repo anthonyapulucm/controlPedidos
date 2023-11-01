@@ -7,7 +7,7 @@ if (empty($_POST["btnIniciar"])){
         $password = $_POST["password"];
         $sql = $conexion -> query("SELECT * FROM USUARIOS WHERE nombre_usuario = '$usuario' and PASSWORD = '$password'");
         if ($datos = $sql->fetch_object()) {
-            header("location: development.php");
+            header("location: app/Boot/App.php");
         } else {
             echo '<div class ="alert alert-danger">USUARIO Y CONTRASEÑA INCORRECTOS</div>';  
         }
