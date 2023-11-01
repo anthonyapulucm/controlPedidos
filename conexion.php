@@ -1,4 +1,4 @@
 <?php
-$conexion = new mysqli("localhost", "root", "","pedidos_escolares", "");
+$conexion = new mysqli("");
 $$conexion->set_charset("utf8");
 ?>
