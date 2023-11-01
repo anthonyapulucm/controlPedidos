@@ -4,7 +4,7 @@ $conexion->set_charset("utf8");
 if (!$conexion) {
     die("ERROR EN CONEXION");
 } else {
-    echo "CONEXION EXITOSA";
+    echo "CONECTADO A PEDIDOS ESCOLARES";
     $conexion;
 }
 ?>
