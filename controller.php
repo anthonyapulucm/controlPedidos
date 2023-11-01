@@ -1,5 +1,5 @@
 <?php
-if (¡empty($_POST["btnIniciar"])){
+if ('¡empty'($_POST["btnIniciar"])){
     if (empty($_POST["usuario"]) and empty($_POST["password"])) {
         echo '<div class ="alert alert-danger">LOS CAMPOS ESTAN VACIOS</div>';
     } else {
@@ -11,7 +11,6 @@ if (¡empty($_POST["btnIniciar"])){
         } else {
             echo '<div class ="alert alert-danger">USUARIO Y CONTRASEÑA INCORRECTOS</div>';  
         }
-        
     }  
 }
 ?>
