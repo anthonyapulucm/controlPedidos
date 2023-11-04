@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-11-2023 a las 18:53:02
+-- Tiempo de generación: 04-11-2023 a las 19:16:15
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -218,7 +218,8 @@ CREATE TABLE `tipo_usuario` (
 --
 
 INSERT INTO `tipo_usuario` (`id_tipo_usuario`, `tipo_usuario`, `descripcion`) VALUES
-(1, 'Cajero', 'Cajero');
+(1, 'Administrador', 'Administrador'),
+(2, 'Encargado', 'Encargado');
 
 -- --------------------------------------------------------
 
@@ -260,7 +261,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `nombre_usuario`, `correo_electronico`, `password`, `tipo_usuario`) VALUES
-(1, 'Fulanito de Tal', 'fulanitodetal@gmail.com', 'fulanito1234!', 1);
+(1, 'admin', 'admin@gmail.com', 'admin1234!', 1),
+(2, 'encargado1', 'encargado1@gmail.com', 'encargado1234!', 2);
 
 -- --------------------------------------------------------
 
